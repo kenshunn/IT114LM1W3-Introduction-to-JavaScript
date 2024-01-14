@@ -40,11 +40,23 @@ console.log(isEven(5,times2))
 // Then, Call the 'modifyArray' function with the 'numbers' array and a function that increments each number by 1
 // Useful Tutorial: https://youtu.be/H4awPsyugS0?si=7wC1B7whXVkG8X5l
 // Your code here
+let numbers = [1,2,3,4,5]
+function modifyArray(array, callback){
+    for(let i in array){
+        array[i] = callback(array[i])
+    }
+}
+function addOne(value){
+    return value+=1
+}
+modifyArray(numbers,addOne)
+console.log(numbers)
 
 // Todo 4.4 See mathUtils.js for the instructions to create the add method and PI constant.
 // Then, import and call the add method here and display the value of the PI constant
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
 // Your code here
+import { add , PI } from "./mathUtils"
 
 // Todo 4.5 See isPalindrome.js for the instructions to create the isPalindrome method.
 // Then, import and call the isPalindrome method here
