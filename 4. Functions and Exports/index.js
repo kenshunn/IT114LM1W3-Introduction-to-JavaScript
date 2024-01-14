@@ -56,13 +56,16 @@ console.log(numbers)
 // Then, import and call the add method here and display the value of the PI constant
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
 // Your code here
-import { add , PI } from "./mathUtils"
-
+import { add , PI } from "./mathUtils.js"
+console.log(add(1,2),PI)
 // Todo 4.5 See isPalindrome.js for the instructions to create the isPalindrome method.
 // Then, import and call the isPalindrome method here
 // Useful Tutorial: https://youtu.be/qgRUr-YUk1Q?si=ceAaeHJfCYCmeNWx
 // Your code here
+import isPalindrome from "./isPalindrome.js"
+console.log(isPalindrome("madam"))
 
 // Checkpoint 4.3 What does the require function and module.exports variable do?
 // Should we use it over the import and export keywords? Why? Research your answer.
-// Answer: 
+// Answer: Require function is also used to import all the variables and functions that is exported using the module.exports. Although I prefer to use import and export keywords as
+// they are less complexed for me as it is pretty straight forward for what it does.
